@@ -1,0 +1,26 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+
+
+article_list:
+ path: /product
+ controller: App\Controller\productController::home
+
+save_article:
+ path: /product/save
+ controller: App\Controller\productController::save
+
+article_show:
+ path: /product/{id}
+ controller: App\Controller\productController::show 
+
+new_article:
+ path: /user/new
+ controller: App\Controller\productController::new
+
+
